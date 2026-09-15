@@ -13,5 +13,9 @@ If aggregated claims are manually entered, the user interface must label them as
 Websites can be verified through DNS CNAME or TXT records, and should appear with a verification indicator or label to indicate the status accordingly.
 Links should open securely and follow standard accessibility and privacy conventions.
 
-Unverified links must be visually distinct and clearly identified as unverified. 
-Implementers may choose to render unverified links as non-interactive text to introduce intentional friction and reduce the risk of misleading attribution. 
+Unverified links must be visually distinct and clearly identified as unverified.
+Implementers may choose to render unverified links as non-interactive text to introduce intentional friction and reduce the risk of misleading attribution.
+
+==== Crypto wallet links
+
+CAUTION: Crypto wallet identity claims (`cawg.crypto_wallet`) verify ownership of a blockchain address, not the trustworthiness of any transaction. Implementers should avoid UI treatments -- such as "Send" buttons, QR codes, or payment prompts -- that could be mistaken for an endorsement to transact.
