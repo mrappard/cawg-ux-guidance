@@ -29,5 +29,12 @@ Verifiers are encouraged to use well-established trust lists such as EUTL and AA
 
 NOTE: TO DO: Replace EUTL and AATL references with updated guidance.
 
+==== Multiple trust registries
+
+A named actor's credentials may be recognized by more than one trust registry.
+In these cases, the actor should be able to specify the order in which their recognized trust registries are considered, and verifiers should respect that user-specified order when presenting trust indicators.
+The registry listed first by the actor should be treated as the primary trust indicator displayed by default, with other recognized registries surfaced through progressive disclosure (for example, a "verified by" list or tooltip) rather than omitted.
+Implementers must not silently reorder or override the actor's specified priority, as doing so could misrepresent which trust relationship the actor intended to emphasize.
+
 Organizational identities may include data such as company name, verified domain, or issuing authority.
 Implementers should display this information clearly, often alongside a logo or verified mark, and maintain consistent visual hierarchy across progressive disclosures.
