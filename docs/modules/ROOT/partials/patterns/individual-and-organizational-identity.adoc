@@ -25,9 +25,9 @@ Organizations and institutions with established, publicly-recognizable branding 
 Similar to individuals, organizations who are verified by a trusted certificate authority can sign their own Content Credentials.
 
 The display of trusted organizational identity will vary depending on the trust lists that are configured by each verifier.
-Verifiers are encouraged to use well-established trust lists such as EUTL and AATL to provide a shared basis for trust. Verifiers are also advised to adopt reputable industry-specific trust lists, such as https://iptc.org/verified-news-publishers-list/[IPTC’s Origin Verified Publisher list], where available and to link out to supporting contexts.
-
-NOTE: TO DO: Replace EUTL and AATL references with updated guidance.
+Verifiers are encouraged to reference the https://opensource.contentauthenticity.org/docs/conformance/trust-lists/[C2PA Trust List], the authoritative registry of certificate trust anchors maintained by the C2PA Conformance Program, to provide a shared basis for trust.
+As of January 2026, the C2PA Trust List supersedes the earlier Interim Trust List (ITL); verifiers should prioritize certificates traceable to the current C2PA Trust List, while continuing to honor previously-issued credentials signed under the frozen ITL.
+Verifiers are also advised to adopt reputable industry-specific trust lists, such as https://iptc.org/verified-news-publishers-list/[IPTC’s Origin Verified Publisher list], where available and to link out to supporting contexts.
 
 Organizational identities may include data such as company name, verified domain, or issuing authority.
 Implementers should display this information clearly, often alongside a logo or verified mark, and maintain consistent visual hierarchy across progressive disclosures.
